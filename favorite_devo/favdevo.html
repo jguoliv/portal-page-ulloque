@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="content-box">
+        <div class="table-wrapper">
+          <table class="fav-devo">
+            <thead>
+              <tr>
+                <th>Speaker</th>
+                <th>Title</th>
+                <th>Location</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Brad Wilcox</td>
+                <td>His Grace Is Sufficient</td>
+                <td>Marriott Center at BYU Provo</td>
+                <td>July 12, 2011</td>
+              </tr>
+              <tr>
+                <td>Andrea Muñoz Spannaus</td>
+                <td>The Fast Track to Light and Truth</td>
+                <td>BYU Idaho Center</td>
+                <td>June 25, 2024</td>
+              </tr>
+              <tr>
+                <td>Elder David A. and Sister Susan K. Bednar</td>
+                <td>The Family is Ordained of God</td>
+                <td>BYU Idaho Center</td>
+                <td>March 9, 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-container">
+          <h2>What is your favorite Devotional?</h2>
+          <form>
+            <label for="speaker">Speaker</label>
+            <input type="text" id="speaker" name="speaker" placeholder="Enter the speaker's name" required>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter the devotional title" required>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Where was it given?" required>
+
+            <label for="year">Year</label>
+            <input type="number" id="year" name="year" placeholder="Enter the year" min="1900" max="2025" required>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

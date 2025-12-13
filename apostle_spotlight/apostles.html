@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        
+        body {
+            background: #E8ECED;
+        }
+
+        #container {
+            height: 800px;
+            width: 1000px;
+            background: url("images/christus.webp") -253px 0px;
+            border: 5px solid black;
+            border-radius: 50px;
+            background-size: cover;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        h1 {
+            font-family: Arial;
+            color: white;
+            text-align: center;
+        }
+
+        .first-presidency {
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 200px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .first-presidency img {
+            height: 120px;
+            width: 120px;
+            border: 5px solid white;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform .5s;
+            object-fit: cover;
+            object-position: top;
+        }
+        
+        .first-presidency img:hover{
+            border: 10px solid rgb(6, 6, 77);
+            transform: scale(1.1);
+        }       
+        
+        .president img {
+            height: 150px;
+            width: 150px;
+        }
+    
+        h2 {
+            font-family: Arial;
+            color: white;
+            text-align: center;
+        }
+
+        .the-twelve {
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+        }
+
+        .one-twelve img{
+            height: 100px;
+            width: 100px;
+            border: 5px solid white;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform .5s;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .one-twelve img:hover{
+            border: 10px solid rgb(6, 6, 77);
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container"> 
+
+        <h1>First Presidency</h1>
+        <div class="first-presidency">
+            <img class = "counselor" src="images/eyring.webp">
+            <div class = "president"><img src="images/oaks.webp">
+            </div>
+            <img class = "counselor" src="images/christofferson.webp">
+        </div>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+        <div class="the-twelve">
+            <div class="one-twelve"><img src="images/holland.webp" alt="Holland">
+            </div>
+            <div class="one-twelve"><img src="images/uchtdorf.webp" alt="Uchtdorf">
+            </div>
+            <div class="one-twelve"><img src="images/bednar.webp" alt="Bednar">
+            </div>
+            <div class="one-twelve"><img src="images/cook.webp" alt="Cook">
+            </div>
+            <div class="one-twelve"><img src="images/anderson.webp" alt="Anderson">
+            </div>
+            <div class="one-twelve"><img src="images/rasband.webp" alt="Rasband">
+            </div>
+            <div class="one-twelve"><img src="images/stevenson.webp" alt="Stevenson">
+            </div>
+            <div class="one-twelve"><img src="images/renlund.webp" alt="Renlund">
+            </div>
+            <div class="one-twelve"><img src="images/gong.webp" alt="Gong">
+            </div>
+            <div class="one-twelve"><img src="images/soares.webp" alt="Soares">
+            </div>
+            <div class="one-twelve"><img src="images/kearon.webp" alt="Kearon">
+            </div>
+            <div class="one-twelve"><img src="images/unknown.png" alt="Unknown">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

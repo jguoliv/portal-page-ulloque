@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Irish+Grover&family=Metal+Mania&display=swap');
+
+body {
+  background: url("../images/halloween-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #e9dcff;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0;
+}
+
+#wrapper {
+  box-shadow: 0 0 40px 10px rgba(180, 90, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(20, 0, 40, 0.6);
+  margin: 50px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+nav ul {
+  font-family: "Metal Mania";
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+nav ul li {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+  color: #c69aff;
+}
+
+nav ul li:hover {
+  color: #b76eff;
+  transform: translateY(-5px) rotate(-2deg);
+  text-shadow: 0 0 10px #b76eff;
+}
+
+nav ul li:nth-child(1)::before {
+  content: "🎭 ";
+}
+
+nav ul li:nth-child(2)::before {
+  content: "🍬 ";
+}
+
+nav ul li:nth-child(3)::before {
+  content: "🕯️ ";
+}
+
+nav ul li:nth-child(4)::before {
+  content: "👻 ";
+}
+
+h1 {
+  color: #b76eff;
+  font-family: "Eater";
+  font-size: 90px;
+  text-shadow: 0 0 20px #8b44ff, 0 0 40px #d69bff;
+  position: relative;
+  animation: flicker 2s infinite;
+  margin-bottom: 40px;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+
+img {
+  border-radius: 20px;
+  box-shadow: 0 0 25px 5px #a56eff;
+  animation: float 5s ease-in-out infinite;
+  width: 300px;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+main {
+  text-align: center;
+}
+
+section {
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 700px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:nth-of-type(1) {
+  background: rgba(255, 140, 0, 0.1);
+  border: 2px solid rgba(255, 140, 0, 0.4);
+}
+
+section:nth-of-type(1):hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px 8px rgba(255, 140, 0, 0.6);
+}
+
+section:nth-of-type(1) h2 {
+  color: #ff8800;
+  text-shadow: 0 0 10px #ff5500;
+}
+
+section:nth-of-type(1) h2::before {
+  content: "🎃 ";
+}
+
+section:nth-of-type(2) {
+  background: rgba(40, 0, 40, 0.4);
+  border: 2px solid rgba(100, 50, 130, 0.6);
+}
+
+section:nth-of-type(2):hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px 8px rgba(130, 90, 200, 0.7);
+}
+
+section:nth-of-type(2) h2 {
+  color: #c7a0ff;
+  text-shadow: 0 0 12px #8744ff;
+}
+
+section:nth-of-type(2) h2::before {
+  content: "🦇 ";
+}
+
+section:nth-of-type(3) {
+  background: rgba(200, 200, 200, 0.1);
+  border: 2px solid rgba(200, 200, 200, 0.3);
+}
+
+section:nth-of-type(3):hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.4);
+}
+
+section:nth-of-type(3) h2 {
+  color: #dcdcdc;
+  text-shadow: 0 0 12px #aaa;
+}
+
+section:nth-of-type(3) h2::before {
+  content: "💀 ";
+}
+
+p {
+  font-family: "Irish Grover";
+  font-size: 22px;
+  color: #fff4da;
+  line-height: 1.6;
+  margin: 0 20px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Metal Mania";
+  padding-top: 50px;
+  padding-bottom: 15px;
+  color: #b76eff;
+  text-shadow: 0 0 8px #a458ff;
+  position: relative;
+}
+
+h2 {
+  position: relative;
+  overflow: visible;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+section:nth-of-type(1) h2:hover::after {
+  content: "🎃 🎃 🎃 🎃 🎃";
+  animation: flyEmojis 2s ease-in-out;
+  opacity: 1;
+}
+
+section:nth-of-type(2) h2:hover::after {
+  content: "🦇 🦇 🦇 🦇 🦇";
+  animation: flyEmojis 2s ease-in-out;
+  opacity: 1;
+}
+
+section:nth-of-type(3) h2:hover::after {
+  content: "💀 💀 💀 💀 💀";
+  animation: flyEmojis 2s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes flyEmojis {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -500%) rotate(720deg) scale(1.5);
+    opacity: 0;
+  }
+}
